@@ -19,7 +19,6 @@ Armazena informações das escunas (barcos) utilizadas nos passeios.
 <br>
 
 ### 🗺️ 3. Tabela `destino`
-![Tabela destino](destino.png) <br>
 Armazena os destinos turísticos disponíveis.
 | id | Nome |
 |----------|----------|
@@ -27,7 +26,7 @@ Armazena os destinos turísticos disponíveis.
 | Tipo: int | Tipo: varchar |
 <br>
 
-###  4. Tabela `passeio`
+### 🚖 4. Tabela `passeio`
 ![Tabela passeio](passeio.png) <br>
 Registra os passeios realizados, incluindo data, horário, escuna, e destino.
 | Id | Data | Hr_saida | Hr_chegada | escuna_Numero | destino_Id |
