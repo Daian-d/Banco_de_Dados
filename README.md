@@ -1,6 +1,7 @@
 # Banco_de_Dados
 ## Inner join
-A junção de duas tabela se dá atraves da chave estrangeira entre elas.
+A união entte duas tabelas, consiste na junção entre chaves primária,  
+<p><A identificação da chave primaria com a chave estrangeira se da pelo id de cada cvcada tabela, que identificação unica.</p>
 
 ### ⚓ 1. Tabela 'Capitão'
 
@@ -27,18 +28,17 @@ Armazena os destinos turísticos disponíveis.
 <br>
 
 ### 🚖 4. Tabela `passeio`
-![Tabela passeio](passeio.png) <br>
 Registra os passeios realizados, incluindo data, horário, escuna, e destino.
 | Id | Data | Hr_saida | Hr_chegada | escuna_Numero | destino_Id |
 |----------|----------|----------|----------|----------|----------|
 | Chave primária com auto-incremento | Data do passeio | Hora de saída | Hora de chegada | Chave estrangeira que referencia a escuna | Chave estrangeira que referencia o destino | 
 | Tipo: int | Tipo: date | Tipo: time | Tipo: time | Tipo: int | Tipo: int |
 <br>
+## Tabelas Relacionadad a Saúde 
 
-
-### 5. Tabelas Relacionadas à Saúde
+### 🏥 5. Tabela Enfermeiro
 - **`Enfermeiro`**: 
-  ![Tabela enfermeiro](enfermeiro.png) <br>
+  
   Armazena informações dos enfermeiros responsáveis pela administração de medicamentos.<br>
   | coren | Nome |
   |--------|---------|
@@ -46,17 +46,17 @@ Registra os passeios realizados, incluindo data, horário, escuna, e destino.
   | tipo: int | tipo: varchar |
   <br>
   
-  
+### 🛌 6. Tabela Paciente 
 - **`Paciente`**: Registra informações dos pacientes.<br>
-  ![Tabela paciente](paciente.png)
+  
   | Num | Nome |
   |-----------|-----------|
   | Chave primária | Nome do Paciente |
   | tipo: int | Tipo: varchar |
   <br>
-  
+
+### ☕ 7. Tabela Remedio
 - **`Remedio`**: Contém os medicamentos disponíveis.<br>
-![tabela remedio](remedio.png)
 
 | Cod | Nome |
 |----------|----------|
@@ -64,8 +64,8 @@ Registra os passeios realizados, incluindo data, horário, escuna, e destino.
 | Tipo: int | Tipo: varchar | 
 <br>
 
+### 🌡️ 8. Tabela Medicamentos
 - **`Medicacao`**: Registra a administração de medicamentos, relacionando pacientes, enfermeiros e remédios.<br>
-![Tabela medicação](medicacao.png)
 
 | id | Data | Hora | PacienteNum | RemedioCod | Enfermeirocoren |
 |----------|-----------|------------|---------------|-------------------|-------------------|
